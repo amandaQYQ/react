@@ -1,10 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 
 import './index.css';
 
 // components
-import { Inputs, Buttons, Uls } from './components'
+import { Inputs, Buttons, Uls } from './components';
+import Parent from './components/test';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -102,6 +103,8 @@ export default class App extends React.Component {
                 <Buttons onClick={this.choseInvert.bind(this)}>反选</Buttons>
                 <Buttons onClick={this.hideAll.bind(this)}>全隐藏</Buttons>
                 <Buttons onClick={this.showAll.bind(this)}>全展示</Buttons>
+
+                <Parent />
             </div>
         )
 
